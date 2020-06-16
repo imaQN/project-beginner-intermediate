@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+*{
+    
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+header{
+    display: inline;
+    overflow: auto;
+}
+nav{
+    background-color: #00B4CC;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+nav li{
+    margin-inline-end: auto;
+    display: inline;
+    list-style-type: none;
+    margin-left: 30px;
+}
+nav a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+.jumbotron{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
+    padding: 10%;
+    /* width: 100%; */
+    height: 100%;
+    min-height: 40%;
+    background-image: url(home.jpg);
+    background-position-x: right;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+}
+main > h2{
+    color: white;
+    padding: 10px;
+    text-align: center;
+    background-color: #00B4CC;
+}
+.cap{
+    
+    text-align: left;
+    /* margin-top: 30%; */
+    color: white;
+    background-color: none;
+}
+.cap > h1{
+    margin-top: 5%;
+    font-size: 36px;
+}
+.cap > p{
+    font-size: 25px;
+}
+menu-list {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit,  minmax(400px, 600px));
+    grid-template-rows: repeat(auto-fit, minmax(0.2fr, 1fr));
+    grid-gap: 1rem;
+    background-color: #2c2c2c;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    padding: 10px;
+}
+#pick{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,  minmax(400px, 600px));
+    grid-gap: 1rem;
+    background-color: #00B4CC;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    padding: 10px;
+}
+main{
+    min-width: 0;
+}
+footer{
+    font-size: 15px;
+    padding: 1%;
+    background-color: #00B4CC;
+    text-align: center;
+    color: white;
+}
+@media screen and (max-width: 800px){
+    .cap > h1{
+        font-size: 20px;
+    }
+    .cap > p{
+        font-size: 15px;
+    }
+}
